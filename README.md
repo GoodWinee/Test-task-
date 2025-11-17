@@ -10,12 +10,27 @@
 - Django REST Framework
 - Docker и Docker Compose
 
-## Как запустить проект
+### Как развернуть проект:
 
-#### С использованием Docker и Docker Compose
-
-1. Убедитесь, что Docker установлен на вашей машине.
-2. В терминале перейдите в папку проекта и выполните команду:
-
-```bash
-docker-compose up --build
+##### Клонировать репозиторий 
+```
+git clone <https://github.com/GoodWinee/Test-task->
+```
+##### Cоздать и активировать виртуальное окружение:
+```
+python -m venv venv
+source venv/Scripts/activate
+```
+##### Установить зависимости из файла requirements.txt:
+```
+pip install -r requirements.txt
+python -m pip install --upgrade pip
+```
+##### Выполнить миграции:
+```
+python manage.py migrate
+```
+##### Запустить проект:
+```
+python manage.py runserver
+```
