@@ -8,7 +8,6 @@
 ## Стек технологий
 - Django 4.x
 - Django REST Framework
-- Docker и Docker Compose
 
 ### Как развернуть проект:
 
